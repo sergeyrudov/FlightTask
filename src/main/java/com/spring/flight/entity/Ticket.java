@@ -1,23 +1,20 @@
 package com.spring.flight.entity;
 
-import javax.persistence.*;
+import java.util.Objects;
 
-@Entity
-@Table(name = "tickets")
+
 public class Ticket {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+
     private int id;
 
-    @Column(name = "enabled")
-    private Boolean enabled;
+
+    private boolean enabled;
 
     public Ticket() {
     }
 
-    public Ticket(int id, Boolean enabled) {
+    public Ticket(int id, boolean enabled) {
         this.id = id;
         this.enabled = enabled;
     }
@@ -36,5 +33,18 @@ public class Ticket {
 
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ticket ticket = (Ticket) o;
+        return id == ticket.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

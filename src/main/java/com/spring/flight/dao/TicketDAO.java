@@ -1,9 +1,8 @@
-package com.spring.flight.service;
+package com.spring.flight.dao;
 
 import com.spring.flight.entity.Ticket;
 
-public interface TicketService {
+public interface TicketDAO {
 
     public Ticket findById(int id);
-
 }
