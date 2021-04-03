@@ -36,6 +36,6 @@ public class CouponStorage {
     public double getNewPrice(CouponDTO couponDTO) {
         Coupon coupon = getCouponById(couponDTO.getId());
 
-        return couponDTO.getPrice() * coupon.getDiscount();
+        return couponDTO.getPrice() - coupon.getDiscount();
     }
 }
