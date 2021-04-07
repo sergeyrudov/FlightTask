@@ -1,8 +1,10 @@
 package com.spring.flight.controller;
 
 
+import com.spring.flight.dto.CheckinDTO;
 import com.spring.flight.dto.CouponDTO;
 import com.spring.flight.entity.Ticket;
+import com.spring.flight.service.BaggageService;
 import com.spring.flight.service.CouponService;
 import com.spring.flight.service.TicketService;
 import org.springframework.http.ResponseEntity;
@@ -16,9 +18,12 @@ public class FlightController {
 
     private final CouponService couponService;
 
-    public FlightController(TicketService ticketService, CouponService couponService) {
+    private final BaggageService baggageService;
+
+    public FlightController(TicketService ticketService, CouponService couponService, BaggageService baggageService) {
         this.ticketService = ticketService;
         this.couponService = couponService;
+        this.baggageService = baggageService;
 
     }
 
@@ -33,5 +38,12 @@ public class FlightController {
     public ResponseEntity<Double> getDiscount(@RequestBody CouponDTO couponDTO) {
         double newPrice = couponService.getNewPrice(couponDTO);
         return ResponseEntity.ok(newPrice);
+    }
+
+    @PostMapping("/baggage")
+    public ResponseEntity<Boolean> checkIn(@RequestBody CheckinDTO checkinDTO) {
+        int checkIn = baggageService.demo(checkinDTO);
+        boolean val = checkIn != 0;
+        return ResponseEntity.ok(val);
     }
 }

@@ -1,3 +1,5 @@
+com/spring/flight/dao/CheckinDAO.java
+ com.spring.flight.dao.CheckinDAO
 com/spring/flight/service/impl/CouponServiceImpl.java
  com.spring.flight.service.impl.CouponServiceImpl
 com/spring/flight/storage/TicketsStorage.java
@@ -12,19 +14,31 @@ com/spring/flight/service/CouponService.java
  com.spring.flight.service.CouponService
 com/spring/flight/dto/CouponDTO.java
  com.spring.flight.dto.CouponDTO
-com/spring/flight/controller/FlightController.java
- com.spring.flight.controller.FlightController
+com/spring/flight/service/impl/TicketServiceImpl.java
+ com.spring.flight.service.impl.TicketServiceImpl
 com/spring/flight/dao/TicketDAO.java
  com.spring.flight.dao.TicketDAO
+com/spring/flight/storage/CheckInStorage.java
+ com.spring.flight.storage.CheckInStorage
 com/spring/flight/storage/CouponStorage.java
  com.spring.flight.storage.CouponStorage
+com/spring/flight/dto/CheckinDTO.java
+ com.spring.flight.dto.CheckinDTO
 com/spring/flight/service/TicketService.java
  com.spring.flight.service.TicketService
+com/spring/flight/service/impl/BaggageServiceImpl.java
+ com.spring.flight.service.impl.BaggageServiceImpl
 com/spring/flight/entity/Ticket.java
  com.spring.flight.entity.Ticket
 com/spring/flight/dao/impl/TicketDAOImpl.java
  com.spring.flight.dao.impl.TicketDAOImpl
+com/spring/flight/entity/CheckIn.java
+ com.spring.flight.entity.CheckIn
+com/spring/flight/service/BaggageService.java
+ com.spring.flight.service.BaggageService
 com/spring/flight/FlightApplication.java
  com.spring.flight.FlightApplication
-com/spring/flight/service/impl/TicketServiceImpl.java
- com.spring.flight.service.impl.TicketServiceImpl
+com/spring/flight/dao/impl/CheckinDAOImpl.java
+ com.spring.flight.dao.impl.CheckinDAOImpl
+com/spring/flight/controller/FlightController.java
+ com.spring.flight.controller.FlightController

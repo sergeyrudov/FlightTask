@@ -5,9 +5,7 @@ import java.util.Objects;
 
 public class Ticket {
 
-
     private int id;
-
 
     private boolean enabled;
 
