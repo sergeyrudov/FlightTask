@@ -14,6 +14,7 @@ localhost:8086/api/coupon
 and response will be amount of user discount
 
 UPDATE:
+
 3. Added API endpoint. 'Check-in'. To check availability for check in, user should input destinationId, and baggageId, and perform POST request, like this:
 localhost:8086/api/baggage 
 
