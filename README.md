@@ -6,9 +6,20 @@ So, this task can be tested, for example with Postman.
 localhost:8086/api/tickets/1
 
 2. To check discount of ticked, it can be verified with POST request, like this:
+localhost:8086/api/coupon
 {
     "id":2,
     "price":200
 }
+and response will be amount of user discount
 
-and response will be price, with new price
+UPDATE:
+3. Added API endpoint. 'Check-in'. To check availability for check in, user should input destinationId, and baggageId, and perform POST request, like this:
+localhost:8086/api/baggage 
+
+{
+    "destinationId":1,
+    "baggageId":0
+}
+
+and response will be true, or false
