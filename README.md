@@ -24,3 +24,6 @@ localhost:8086/api/baggage
 }
 
 and response will be true, or false
+
+UPDATE:
+added Lombok support
