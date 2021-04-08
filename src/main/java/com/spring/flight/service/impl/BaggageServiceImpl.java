@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class BaggageServiceImpl implements BaggageService {
 
-    @Autowired
+
     private final CheckinDAO checkinDAO;
 
     public BaggageServiceImpl(CheckinDAO checkinDAO) {

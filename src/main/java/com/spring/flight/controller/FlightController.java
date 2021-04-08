@@ -24,13 +24,11 @@ public class FlightController {
         this.ticketService = ticketService;
         this.couponService = couponService;
         this.baggageService = baggageService;
-
     }
 
     @GetMapping("/tickets/{id}")
     public ResponseEntity<String> findTicketById(@PathVariable(value = "id") int id) {
         Ticket ticket = ticketService.findById(id);
-
         return ResponseEntity.ok(String.valueOf(ticket.isEnabled()));
     }
 

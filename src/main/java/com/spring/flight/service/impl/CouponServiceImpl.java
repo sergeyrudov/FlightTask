@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CouponServiceImpl implements CouponService {
 
-    @Autowired
+
     private final CouponDAO couponDAO;
 
     public CouponServiceImpl(CouponDAO couponDAO) {
