@@ -1,7 +1,10 @@
 package com.spring.flight.entity;
 
+import lombok.Getter;
+
 import java.util.Random;
 
+@Getter
 public class Coupon {
 
     private static final int[] DISCOUNTS = {10,50,60};
@@ -16,13 +19,5 @@ public class Coupon {
         this.id = id;
         this.discount = DISCOUNTS[RANDOM.nextInt(DISCOUNTS.length)];
         this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public double getDiscount() {
-        return discount;
     }
 }

@@ -31,7 +31,7 @@ public class FlightController {
     public ResponseEntity<String> findTicketById(@PathVariable(value = "id") int id) {
         Ticket ticket = ticketService.findById(id);
 
-        return ResponseEntity.ok(String.valueOf(ticket.getEnabled()));
+        return ResponseEntity.ok(String.valueOf(ticket.isEnabled()));
     }
 
     @PostMapping ("/coupon")
