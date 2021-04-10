@@ -28,7 +28,7 @@ public class FlightController {
 
     @GetMapping("/tickets/{id}")
     public ResponseEntity<String> findTicketById(@PathVariable(value = "id") int id) {
-        Ticket ticket = ticketService.findById(id);
+        Ticket ticket = ticketService.cache(id);
         return ResponseEntity.ok(String.valueOf(ticket.isEnabled()));
     }
 

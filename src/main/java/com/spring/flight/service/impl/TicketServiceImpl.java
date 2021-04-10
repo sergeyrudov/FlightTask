@@ -18,7 +18,7 @@ public class TicketServiceImpl implements TicketService {
 
 
     @Override
-    public Ticket findById(int id) {
-        return ticketDAO.findById(id);
+    public Ticket cache(int id) {
+        return ticketDAO.cache(id);
     }
 }

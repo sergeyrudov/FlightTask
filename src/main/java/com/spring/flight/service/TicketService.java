@@ -4,6 +4,6 @@ import com.spring.flight.entity.Ticket;
 
 public interface TicketService {
 
-    public Ticket findById(int id);
+    public Ticket cache(int id);
 
 }

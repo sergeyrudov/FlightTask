@@ -4,5 +4,5 @@ import com.spring.flight.entity.Ticket;
 
 public interface TicketDAO {
 
-    public Ticket findById(int id);
+    public Ticket cache(int id);
 }

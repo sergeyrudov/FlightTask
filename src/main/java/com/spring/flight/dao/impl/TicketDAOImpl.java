@@ -16,7 +16,7 @@ public class TicketDAOImpl implements TicketDAO {
 
 
     @Override
-    public Ticket findById(int id) {
-        return storage.getTicketById(id);
+    public Ticket cache(int id) {
+        return storage.cache(id);
     }
 }
