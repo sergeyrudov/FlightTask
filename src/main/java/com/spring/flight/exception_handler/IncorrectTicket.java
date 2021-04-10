@@ -1,6 +1,7 @@
 package com.spring.flight.exception_handler;
 
 
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,3 +12,4 @@ import lombok.Setter;
 public class IncorrectTicket {
     String info;
 }
+

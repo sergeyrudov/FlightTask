@@ -2,8 +2,9 @@ com/spring/flight/dao/CheckinDAO.java
  com.spring.flight.dao.CheckinDAO
 com/spring/flight/service/impl/CouponServiceImpl.java
  com.spring.flight.service.impl.CouponServiceImpl
-com/spring/flight/storage/CheckInStorage.java
- com.spring.flight.storage.CheckInStorage
+com/spring/flight/storage/TicketsStorage.java
+ com.spring.flight.storage.TicketsStorage
+ com.spring.flight.storage.TicketsStorage$1
 com/spring/flight/entity/Coupon.java
  com.spring.flight.entity.Coupon
 com/spring/flight/dao/CouponDAO.java
@@ -18,8 +19,10 @@ com/spring/flight/dao/impl/CheckinDAOImpl.java
  com.spring.flight.dao.impl.CheckinDAOImpl
 com/spring/flight/dao/TicketDAO.java
  com.spring.flight.dao.TicketDAO
-com/spring/flight/controller/FlightController.java
- com.spring.flight.controller.FlightController
+com/spring/flight/service/impl/TicketServiceImpl.java
+ com.spring.flight.service.impl.TicketServiceImpl
+com/spring/flight/storage/CheckInStorage.java
+ com.spring.flight.storage.CheckInStorage
 com/spring/flight/storage/CouponStorage.java
  com.spring.flight.storage.CouponStorage
 com/spring/flight/dto/CheckinDTO.java
@@ -30,20 +33,17 @@ com/spring/flight/service/impl/BaggageServiceImpl.java
  com.spring.flight.service.impl.BaggageServiceImpl
 com/spring/flight/entity/Ticket.java
  com.spring.flight.entity.Ticket
-com/spring/flight/service/impl/TicketServiceImpl.java
- com.spring.flight.service.impl.TicketServiceImpl
+com/spring/flight/dao/impl/TicketDAOImpl.java
+ com.spring.flight.dao.impl.TicketDAOImpl
 com/spring/flight/entity/CheckIn.java
  com.spring.flight.entity.CheckIn
 com/spring/flight/service/BaggageService.java
  com.spring.flight.service.BaggageService
 com/spring/flight/FlightApplication.java
  com.spring.flight.FlightApplication
-com/spring/flight/exception_handler/GlobalExceptionHandler.java
- com.spring.flight.exception_handler.GlobalExceptionHandler
 com/spring/flight/exception_handler/IncorrectTicket.java
  com.spring.flight.exception_handler.IncorrectTicket
-com/spring/flight/dao/impl/TicketDAOImpl.java
- com.spring.flight.dao.impl.TicketDAOImpl
-com/spring/flight/storage/TicketsStorage.java
- com.spring.flight.storage.TicketsStorage
- com.spring.flight.storage.TicketsStorage$1
+com/spring/flight/controller/FlightController.java
+ com.spring.flight.controller.FlightController
+com/spring/flight/exception_handler/GlobalExceptionHandler.java
+ com.spring.flight.exception_handler.GlobalExceptionHandler
