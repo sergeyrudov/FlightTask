@@ -43,7 +43,7 @@ com/spring/flight/FlightApplication.java
  com.spring.flight.FlightApplication
 com/spring/flight/exception_handler/IncorrectTicket.java
  com.spring.flight.exception_handler.IncorrectTicket
-com/spring/flight/controller/FlightController.java
- com.spring.flight.controller.FlightController
 com/spring/flight/exception_handler/GlobalExceptionHandler.java
  com.spring.flight.exception_handler.GlobalExceptionHandler
+com/spring/flight/controller/FlightController.java
+ com.spring.flight.controller.FlightController
