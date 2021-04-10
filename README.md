@@ -27,3 +27,7 @@ and response will be true, or false
 
 UPDATE:
 added Lombok support
+
+UPDATE:
+added guava cache
+added logging
