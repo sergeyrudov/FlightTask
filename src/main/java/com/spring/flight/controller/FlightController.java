@@ -4,11 +4,15 @@ package com.spring.flight.controller;
 import com.spring.flight.dto.CheckinDTO;
 import com.spring.flight.dto.CouponDTO;
 import com.spring.flight.entity.Ticket;
+import com.spring.flight.exception_handler.IncorrectTicket;
 import com.spring.flight.service.BaggageService;
 import com.spring.flight.service.CouponService;
 import com.spring.flight.service.TicketService;
+import org.springframework.cache.Cache;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/api")

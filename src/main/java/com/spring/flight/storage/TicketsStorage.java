@@ -27,7 +27,6 @@ public class TicketsStorage {
                             }
                         });
         try {
-            LOGGER.info("OK, ticket with: " + id + " was found");
             return ticketCache.get(id);
         } catch (CacheLoader.InvalidCacheLoadException | NullPointerException | ExecutionException e) {
             LOGGER.info("No such ticket");
