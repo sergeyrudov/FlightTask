@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
@@ -13,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TicketsStorage {
 
-    private static org.slf4j.Logger LOGGER = LoggerFactory.getLogger(TicketsStorage.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TicketsStorage.class);
 
     public static Ticket cache(int id) {
         LoadingCache<Integer, Ticket> ticketCache =
