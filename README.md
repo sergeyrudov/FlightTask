@@ -31,3 +31,6 @@ added Lombok support
 UPDATE:
 added guava cache
 added logging
+
+UPDATE:
+added swagger-ui suuport, http://localhost:8086/swagger-ui/index.html#/
